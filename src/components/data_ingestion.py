@@ -20,6 +20,7 @@ class DataIngestionConfig:
 class DataIngestion:
     def __init__(self):
         self.ingestion_config=DataIngestionConfig()
+    
     def initiate_data_ingestion(self):
         logging.info("Entered the data ingestion method or component")
         try:
@@ -52,7 +53,7 @@ if __name__=="__main__":
     train_data,test_data=obj.initiate_data_ingestion()
 
     data_transformation=DataTransformation()
-    data_transformation.initiate_dta_transformation(train_data,test_data)
+    data_transformation.initiate_data_transformation(train_data,test_data)
    
    
    # obj.initiate_data_ingestion()
